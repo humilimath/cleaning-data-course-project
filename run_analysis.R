@@ -45,7 +45,7 @@ rm(subject_data,activity_data)
 pattern <- "-mean\\(\\)|-std\\(\\)"
 relevant_feature_indices <- grep(pattern,features$V2)
 data <- data[,c(1,2,2+relevant_feature_indices)]
-rm(pattern)
+rm(pattern, features, relevant_feature_indices)
 
 # Step 3: Uses descriptive activity names to name activities in the dataset
 
@@ -60,7 +60,7 @@ data  <- inner_join(activity_labels,data,by="ActivityIndex") %>%  # Get the desc
          select(-ActivityIndex) %>%                               # Remove the Activity Index as it is now redundant 
          select(2,1,3:num_cols)                                   # Reorder so that Subject comes first
 
-rm(num_cols)     # Clean up
+rm(num_cols,activity_labels)     # Clean up
 
 # Step 4: Label the dataset with descriptive names.  
 
