@@ -35,11 +35,13 @@ This is the result of Step 4 of the course project.
 
 #### Summary Choices
 This dataset combines data from within the above UCI dataset obtained above, in particular it combines the following into one data table:
+
 1. The training and test datasets 
 2. The subject and activity datatables
 3. The features list, which became column headings
 
 The following files were used:
+
 1. "UCI HAR Dataset/test/X_test.txt"
 2. "UCI HAR Dataset/test/subject_test.txt"
 3. "UCI HAR Dataset/test/y_test.txt"
@@ -55,6 +57,7 @@ Each observation consists summary values from one subject undertaking one type o
 
 #### Variable details
 The columns are as follows:
+
 1. Subject - The id number (integer) of the subject who undertook the activity
 2. Activity - The activity (a factor) describing the activity they undertook
 3. tBodyAcc-mean()-X
@@ -140,6 +143,7 @@ Each observation therefore corresponds to a subject and an activity and summaris
 
 #### Variable details
 The columns are as follows:
+
 1. Subject - The id number (integer) of the subject
 2. Activity - An activity (a factor) describing
 3. Mean.Of.tBodyAcc-mean()-X
