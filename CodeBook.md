@@ -127,7 +127,7 @@ The columns are as follows:
 67. fBodyBodyGyroJerkMag-mean()
 68. fBodyBodyGyroJerkMag-std()
 
-Columns 3 to 68 correspond to exactly the same named columns in the original data set(s). They are statistics over measures of acceleration and so their units are "g".
+Columns 3 to 68 correspond to exactly the same named columns in the original data set(s). They are statistics over measures of acceleration, which were originally normalised to [-1,1] (see the UCI code book), and so they have no units.
 
 ### cleaned_phone_grouped_means.txt
 This data is also repeated in the "data_means" table produced in the R workspace by the script.
@@ -213,7 +213,7 @@ The columns are as follows:
 67. Mean.Of.fBodyBodyGyroJerkMag-mean()
 68. Mean.Of.fBodyBodyGyroJerkMag-std()
 
-Columns 3 to 68 correspond to the means of the same named columns in the cleaned_phone.txt dataset. They are statistics over measures of acceleration and so their units are "g".
+Columns 3 to 68 correspond to the means of the same named columns in the cleaned_phone.txt dataset. They are statistics over measures of acceleration, which were originally normalised to [-1,1] (see the UCI code book), and so they have no units.
 
 
 
